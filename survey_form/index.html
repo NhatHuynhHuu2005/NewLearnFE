@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Khảo sát sự hài lòng của sinh viên về mình .-.</h1>
+            <p id="description" class="description text-center">Cảm ơn thời gian các bạn bỏ ra làm bài khảo sát nhảm c*t này</em></p>
+        </header>
+        
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">Họ và tên</label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Nhập họ và tên" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email (dùng email BKNetID@hcmut.edu.vn)</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Nhập email của bạn" required />
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Bạn thuộc khoá (nhập số):</label>
+                <input id="number" type="number" name="number" class="form-control" min="17" max="25" placeholder="K..." required />
+            </div>
+            <div class="form-group">
+                <p>Bạn là sinh viên khoa nào?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option value="">Lựa chọn khoa</option>
+                    <opiton value="1">Khoa Điện - Điện tử</opiton>
+                    <option value="2">Khoa Kỹ thuật Xây dựng</option>
+                    <option value="3">Khoa Cơ khí</option>
+                    <option value="4">Khoa Kỹ thuật Hoá học</option>
+                    <option value="5">Khoa Khoa học và Kỹ thuật Máy tính</option>
+                    <option value="6">Khoa Công nghệ Vật liệu</option>
+                    <option value="7">Khoa Khoa học Ứng dụng</option>
+                    <option value="8">Khoa Kỹ thuật Giao thông</option>
+                    <option value="9">Khoa Quản lý Công nghiệp</option>
+                    <option value="10">Khoa Kỹ thuật Địa chất và Dầu khí</option>
+                    <option value="11">Khoa Môi trường và Tài nguyên</option>
+                </select>
+            </div>   
+            <div class="form-group">
+                <p>Bạn có thích mình chứ?</p>
+                <label>
+                    <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+                    Chắc chắn rồi hẹ hẹ hẹ!
+                </label>
+                <label>
+                    <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+                    Để mình suy nghĩ đã...
+                </label>
+                <label>
+                    <input name="user-recommend" value="not-sure" type="radio" class="input-radio">
+                    Cút!
+                </label>
+            </div>    
+            <div class="form-group">
+                <p>Điều gì khiến bạn ấn tượng nhất về mình?</p>
+                <select id="most-like" name="mostlike" class="form-control" required>
+                    <option value="">Lựa chọn của bạn</option>
+                    <option value="1">Đẹp trai</option>
+                    <option value="2">Ngầu lòi</option>
+                    <option value="3">Hề hước</option>
+                    <option value="4">Nhảm xàm</option>
+                    <option value="5">Giỏi giang</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>
+                    Điều gì ở mình mà bạn mong muốn mình cải thiện?
+                    <span class="clue">(Check all that applied)</span>
+                </p>
+                <label>
+                    <input name="prefer" value="1" type="checkbox" class="input-checkbox">
+                    Tập gym đi anh zaii
+                </label>
+                <label>
+                    <input name="prefer" value="2" type="checkbox" class="input-checkbox">
+                    Ê đừng có nhạt nữa fen
+                </label>
+                <label>
+                    <input name="prefer" value="3" type="checkbox" class="input-checkbox">
+                    Bớt khùng nhen
+                </label>
+                <label>
+                    <input name="prefer" value="4" type="checkbox" class="input-checkbox">
+                    Chắc là phải có nhiều ghệ hơn hihi
+                </label>
+                <label>
+                    <input name="prefer" value="5" type="checkbox" class="input-checkbox">
+                    Lười quá à siêng lên đi
+                </label>
+                <label>
+                    <input name="prefer" value="6" type="checkbox" class="input-checkbox">
+                    Đi học đều đặn lên mày ơi
+                </label>
+                <label>
+                    <input name="prefer" value="7" type="checkbox" class="input-checkbox">
+                    Bớt nói chuyện trong giờ nha mậy
+                </label>
+                <label>
+                    <input name="prefer" value="8" type="checkbox" class="input-checkbox">
+                    Ê hong có gì để chê luôn á pà
+                </label>
+                <label>
+                    <input name="prefer" value="9" type="checkbox" class="input-checkbox">
+                    Ý kiến khác (viết dưới comment)
+                </label>
+            </div>
+            <div class="form-group">
+                <p>Ý kiến khác của các bạn</p>
+                <textarea id="comments" class="input-textarea" name="comments" placeholder="Viết comment ở đây nhé..."></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+        <footer>
+            <p>Contact me: <a href="https://github.com/NhatHuynhHuu2005">Huynh Nhat</a></p>
+        </footer>
+    </div>
+</body>
+</html>
